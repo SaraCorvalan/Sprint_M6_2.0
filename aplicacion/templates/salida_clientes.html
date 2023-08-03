@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% load crispy_forms_tags %}
+    <div class="container">
+      <h3>Clientes registrados</h3>
+      <br>     
+        <table class="table-secondary table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">rut</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Dirección</th>
+                <th scope="col">Ciudad</th>
+                <th scope="col">email</th>
+                <th scope="col">Fecha Ingreso</th>
+              </tr>
+            </thead>
+            <tbody class="usuarios">                                        
+            {% for p in usuarios %}             
+              <tr>
+                <td>{{p.rut}}</td>
+                <td>{{p.nombre}}</td>
+                <td>{{p.apellido}}</td>
+                <td>{{p.direccion}}</td>
+                <td>{{p.ciudad}}</td>
+                <td>{{p.email}}</td>
+                <td>{{p.creacion}}</td>
+              </tr>
+            {% endfor %}
+            </tbody>
+        </table>        
+    </div>
+{% endblock %}

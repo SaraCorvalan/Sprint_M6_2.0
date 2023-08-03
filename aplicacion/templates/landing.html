@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <main>
+    <br><br>
+    {% if user.is_authenticated %}
+    <div class="text-black">
+      <h4 class="mb-3" >Bienvenid@ {{users}} !!!Toda una tienda a su servicio!!!</h4>
+    </div>
+    {% endif %} 
+    <br>
+    <div class="jumbotrom">
+      <h1>Tienda Virtual</h1>
+      <p>Bienvenido a nuestra tienda de moda online, donde encontrarás la mayor variedad en las mejores marcas.
+      Aprovecha las mejores ofertas para cambiar tu estilo sin gastar de más.
+      Nuestra tienda ofrece moda para mujeres, hombres y niños, con opciones para todos los gustos y edades. 
+      Explora ahora nuestra tienda y descubre las últimas tendencias y el mejor servicio.
+      </p>
+    </div>
+    <div class="container">
+      <div class="row">
+          <div class="col-sm">
+              <img src="{% static 'assets/imagenes/mujer.jpg'%}" alt="" class="img-fluid">
+              <p>MUJER</p>
+          </div>
+          <div class="col-sm">
+              <img src="{% static 'assets/imagenes/niños.jpg'%}" alt="" class="img-fluid">
+              <p>NIÑOS</p>
+          </div>
+          <div class="col-sm">
+              <img src="{% static 'assets/imagenes/hombre.jpeg'%}" alt="" class="img-fluid">
+              <p>HOMBRE</p>
+          </div>    
+      </div>
+    </div>
+
+
+    <!-- cards Productos -->
+    
+      <div id="shopContent" class="shop-content">
+        
+      </div>
+
+    <!--modal container-->
+    <div id="modal-container" class="modal-container"></div>
+    
+
+  </main>
+   
+{% endblock %}
+
+  

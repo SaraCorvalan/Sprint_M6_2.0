@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  {% load crispy_forms_tags %}
+    <div class="container">
+      <br><br>
+      
+      <br>
+      <form action="" class="formulario_contacto" method="POST">
+        <h3 id="titulo">Registro de Clientes</h3>
+        {% csrf_token %}
+        
+        {{ form }}
+      
+        <br><br>
+       <button type="submit" id="btnEnviar" class="button">Enviar</button>
+       
+      </form>
+      {{ mensaje }}
+    </div>
+    {% endblock %}

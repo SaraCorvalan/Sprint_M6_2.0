@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% load crispy_forms_tags %}
+ <div class="container">
+  <br><br>
+      <h3 id="titulo">Registro de Empresas Proveedoras</h3>
+      <br>
+      <form action="" class="formulario_contacto" method="POST">
+        
+        {% csrf_token %}
+        
+        {{ form_prov }}
+      
+        <br><br>
+       <button type="submit" id="btnEnviar" class="button">Enviar</button>
+       
+      </form>
+      {{ mensaje }}
+    </div>
+{% endblock %}

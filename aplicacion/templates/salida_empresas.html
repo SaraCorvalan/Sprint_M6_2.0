@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% load crispy_forms_tags %}
+    <div class="container">
+      <h3>Informe Empresas Proveedoras</h3>
+      <br>     
+        <table class="table-secondary table-bordered border-primary">
+            <thead>
+              <tr>
+                <th scope="col">RUT </th>
+                <th scope="col">Nombre </th>
+                <th scope="col">Dirección </th>
+                <th scope="col">Ciudad</th>
+                <th scope="col">email contaco</th>
+                <th scope="col">Teléfono contacto</th>
+                <th scope="col">Rubro</th>
+              </tr>
+            </thead>
+            <tbody class="usuarios">                                        
+            {% for p in proveedores %}             
+              <tr>
+                <td>{{p.rut_empresa}}</td>
+                <td>{{p.nombre_empresa}}</td>               
+                <td>{{p.direccion_empresa}}</td>
+                <td>{{p.ciudad_empresa}}</td>
+                <td>{{p.email_empresa}}</td>
+                <td>{{p.fono_empresa}}</td>
+                <td>{{p.rubro_empresa}}</td>
+              </tr>
+            {% endfor %}
+            </tbody>
+        </table>        
+    </div>
+{% endblock %}

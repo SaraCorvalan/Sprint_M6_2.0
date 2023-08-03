@@ -1,0 +1,255 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h1>Tienda Virtual</h1><br/>
+<div class="text-black">
+    <h4 class="mb-3" >Bienvenid@ {{users}} !!!Toda una tienda a su servicio!!!</h4>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <strong>Tenemos las mejores marcas</strong>
+            <div class="card" style="width: 10rem;">
+                <img src="{% static 'assets/imagenes/adidas-originals.png'%}" class="card-img-top" alt="...">
+            </div>
+            <div class="card" style="width: 10rem;">
+                <img src="{% static 'assets/imagenes/merrell.png'%}" class="card-img-top" alt="...">
+            </div>
+            <div class="card" style="width: 10rem;">
+                <img src="{% static 'assets/imagenes/vizzano.png'%}" class="card-img-top" alt="...">
+            </div>
+            <div class="card" style="width: 10rem;">
+                <img src="{% static 'assets/imagenes/vans.png'%}" class="card-img-top" alt="...">
+            </div>
+            <div class="card" style="width: 10rem;">
+                <img src="{% static 'assets/imagenes/the-north-face.png'%}" class="card-img-top" alt="...">
+            </div>
+            <div class="card" style="width: 10rem;">
+                <img src="{% static 'assets/imagenes/polo.png'%}" class="card-img-top" alt="...">
+            </div>
+            <div class="card" style="width: 10rem;">
+                <img src="{% static 'assets/imagenes/MARCAS_HOME_01.png'%}" class="card-img-top" alt="...">
+            </div>
+            <div class="card" style="width: 10rem;">
+                <img src="{% static 'assets/imagenes/lippi.png'%}" class="card-img-top" alt="...">
+            </div>
+            <div class="card" style="width: 10rem;">
+                <img src="{% static 'assets/imagenes/io.png'%}" class="card-img-top" alt="...">
+            </div>
+            <div class="card" style="width: 10rem;">
+                <img src="{% static 'assets/imagenes/hush-puppies.png'%}" class="card-img-top" alt="...">
+            </div>
+            <div class="card" style="width: 10rem;">
+                <img src="{% static 'assets/imagenes/haka-honu.png'%}" class="card-img-top" alt="...">
+            </div>
+            <div class="card" style="width: 10rem;">
+                <img src="{% static 'assets/imagenes/adidas-performance-new.png'%}" class="card-img-top" alt="...">
+            </div>
+            <div class="card" style="width: 10rem;">
+                <img src="{% static 'assets/imagenes/calvin-klein.png'%}" class="card-img-top" alt="...">
+            </div>
+            <div class="card" style="width: 10rem;">
+                <img src="{% static 'assets/imagenes/converse.png'%}" class="card-img-top" alt="...">
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <h2>Artículos para Mujer</h2>
+            <div class="container">
+                <div class="item">
+                    <img src="{% static 'assets/imagenes/conjunto_casual.png'%}" alt="Artículo para mujer 1">
+                    <h3>Conjunto casual</h3>
+                    <p>Precio: $79.99</p>
+                </div>
+                <div class="item">
+                    <img src="{% static 'assets/imagenes/1m.jpg'%}" alt="Artículo para mujer 2">
+                    <h3>Vestido floral</h3>
+                    <p>Precio: $39.99</p>
+                </div>
+                <div class="item">
+                    <img src="{% static 'assets/imagenes/2m.jpg'%}" alt="Artículo para mujer 3">
+                    <h3>Conjunto elegante</h3>
+                    <p>Precio: $69.99</p>
+                </div>
+                <div class="item">
+                    <img src="{% static 'assets/imagenes/4.jpg'%}" alt="Artículo para mujer 4">
+                    <h3>Conjunto basico</h3>
+                    <p>Precio: $59.99</p>
+                </div>
+                <div class="item">
+                    <img src="{% static 'assets/imagenes/5.jpg'%}" alt="Artículo para mujer 5">
+                    <h3>Abrigo rojo</h3>
+                    <p>Precio: $99.99</p>
+                </div>
+                
+            </div>
+        
+            <h2>Artículos para Hombre</h2>
+            <div class="container">
+                <div class="item">
+                    <img src="{% static 'assets/imagenes/1h.jpg'%}" alt="Artículo para hombre 1">
+                    <h3>Poleron fila</h3>
+                    <p>Precio: $49.99</p>
+                </div>
+                <div class="item">
+                    <img src="{% static 'assets/imagenes/2h.jpg'%}" alt="Artículo para hombre 2">
+                    <h3>Conjunto veraniego</h3>
+                    <p>Precio: $64.99</p>
+                </div>
+                <div class="item">
+                    <img src="{% static 'assets/imagenes/3h.jpg'%}" alt="Artículo para hombre 3">
+                    <h3>Polera new york</h3>
+                    <p>Precio: $34.99</p>
+                </div>
+                <div class="item">
+                    <img src="{% static 'assets/imagenes/4h.jpg'%}" alt="Artículo para hombre 4">
+                    <h3>Camisa manga corta</h3>
+                    <p>Precio: $24.99</p>
+                </div>
+                <div class="item">
+                    <img src="{% static 'assets/imagenes/5h.jpg'%}" alt="Artículo para hombre 5">
+                    <h3>Conjunto casual</h3>
+                    <p>Precio: $114.99</p>
+                </div>
+            </div>
+        
+            <h2>Artículos para Niños</h2>
+            <div class="container">
+                <div class="item">
+                    <img src="{% static 'assets/imagenes/1n.jpg'%}" alt="Artículo para niños 1">
+                    <h3>Buzo mickey</h3>
+                    <p>Precio: $39.99</p>
+                </div>
+                <div class="item">
+                    <img src="{% static 'assets/imagenes/2n.jpg'%}" alt="Artículo para niños 2">
+                    <h3>Vestido estilo princesa</h3>
+                    <p>Precio: $54.99</p>
+                </div>
+                <div class="item">
+                    <img src="{% static 'assets/imagenes/3n.jpg'%}" alt="Artículo para niños 3">
+                    <h3>Buzo verde agua</h3>
+                    <p>Precio: $38.99</p>
+                </div>
+                <div class="item">
+                    <img src="{% static 'assets/imagenes/4n.jpg'%}" alt="Artículo para niños 4">
+                    <h3>Buzo navideño</h3>
+                    <p>Precio: $34.99</p>
+                </div>
+                <div class="item">
+                    <img src="{% static 'assets/imagenes/5n.jpg'%}" alt="Artículo para niños 5">
+                    <h3>Conjuto niño</h3>
+                    <p>Precio: $54.99</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-md-end">
+            <div class="col-md-12">
+                <!-- Button trigger modal -->
+            <button type="button" class="btn btn-custom btn-rounded"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Descuentos diferentes marcas
+            </button>
+  
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Descuentos </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>¡Aprovecha esta oportunidad única! Estamos ofreciendo descuentos imperdibles en una amplia selección de productos. No te pierdas la oportunidad de obtener tus artículos favoritos a precios increíbles.</p>
+                            <img src="{% static 'assets/imagenes/converse_menu.png'%}" alt="...">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+             <br> <br>
+            <div class="col-md-12">
+                <!-- Button trigger modal -->
+            <button type="button" class="btn btn-custom btn-rounded"  data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                Eco produccion
+            </button>
+  
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Eco produccion </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>¡Cuidar el planeta es nuestro propósito! Utilizamos materiales reciclados y energías limpias para minimizar nuestro impacto en el entorno. Desde la fabricación hasta el empaque, cada paso está diseñado para proteger y preservar nuestros recursos naturales.</p>
+                            <img src="{% static 'assets/imagenes/eco-produccion-boton.png'%}" alt="...">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <br> <br>
+            <div class="col-md-12">
+                <!-- Button trigger modal -->
+            <button type="button" class="btn btn-custom btn-rounded"  data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                Respeto a los animales
+            </button>
+  
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Respeto a los animales </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>¡Juntos podemos hacer la diferencia! Al elegir productos que respetan a los animales, contribuimos a un mundo más humano y empático.</p>
+                            <img src="{% static 'assets/imagenes/respeto-animales-boton.png'%}" alt="...">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <br> <br>
+            <div class="col-md-12">
+                <!-- Button trigger modal -->
+            <button type="button" class="btn btn-custom btn-rounded"  data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                Segunda seleccion
+            </button>
+  
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Segunda seleccion </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>¡Descubre nuestras ofertas especiales y ahorra mientras compras con nosotros! En la Segunda Selección, calidad y ahorro van de la mano.
+
+                                ¡No esperes más! ¡Explora nuestra selección y llévate los mejores productos a precios increíbles!</p>
+                            <img src="{% static 'assets/imagenes/segunda-mano-boton.png'%}" alt="...">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            </div>
+            
+    </div>
+</div>
+{% endblock %}
